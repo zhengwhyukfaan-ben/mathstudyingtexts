@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Fields of Mathematics</title>
+    <script src="../katex-config.js"></script>
+    <style>
+        /* 重置最外層的計數器 */
+        body {
+            counter-reset: h2counter;
+        }
+        
+        /* 第一層級：H2 */
+        h2 {
+            counter-reset: h3counter;
+            counter-increment: h2counter;
+        }
+        h2::before {
+            content: counter(h2counter) " ";
+        }
+        
+        /* 第二層級：H3 */
+        h3 {
+            counter-reset: h4counter;
+            counter-increment: h3counter;
+        }
+        h3::before {
+            content: counter(h2counter) "." counter(h3counter) " ";
+        }
+        
+        /* 第三層級：H4 */
+        h4 {
+            counter-reset: h5counter;
+            counter-increment: h4counter;
+        }
+        h4::before {
+            content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) " ";
+        }
+        
+        /* 第四層級：H5 */
+        h5 {
+            counter-increment: h5counter;
+        }
+        h5::before {
+            content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) " ";
+        }
+    </style>
+
+</head>
+
+<body> 
+
+    <h1>Mathematics – Core Subfields by Category</h1>
+
+    <p>
+        This page provides an overview of the fields of mathematics for study, but it is not completely exhaustive. Some of the more advanced fields of mathematics are, in fact, hard to fit neatly into one broad category.
+    </p>
+
+    <a href="../index.html">Home Page</a> <br>
+    <a href="../MathFields/mathfields.html">Core Subfields of Math</a>
+
+
+    <hr>
+
+    <h2>Foundations and Logic</h2>
+
+    <p>The study of the structure, and foundations of mathematical reasoning itself — what constitutes a rigorous proof, what is computable, and on which axiomatic systems mathematical theories can be built. It serves both as the starting point of mathematics and as a universal language that runs through all its branches.</p>
+    
+    <h3>Mathematical Logic</h3>
+    <p>The study of formal systems, proofs, computability, and the foundational structure of mathematical reasoning.</p>
+
+    <h3>Set Theory</h3>
+    <p>The study of the properties of sets, infinities, ordinals, cardinals, and their axiomatic foundations.</p>
+    
+    <h3>Category Theory</h3>
+    <p>A unifying abstract language describing mathematical structures and their relationships.</p>
+
+    <h3>Model Theory</h3>
+    <p>The study of the relationships between sentences in formal languages and the mathematical structures (models) in which they are true.</p>
+
+    <hr>
+
+    <h2>Analysis</h2>
+    <h3>Real Analysis</h3>
+    <h3>Complex Analysis</h3>
+    <h3>Functional Analysis</h3>
+    <h3>Measure Theory</h3>
+    <h3>Harmonic Analysis</h3>
+    <h3>Calculus of Variations</h3>
+    <h3>Geometric Analysis</h3>
+
+    <hr>
+
+    <h2>Algebra</h2>
+    <h3>Group Theory</h3>
+    <h3>Ring Theory</h3>
+    <h3>Commutative Algebra</h3>
+    <h3>Field Theory and Galois Theory</h3>
+    <h3>Homological Algebra</h3>
+    <h3>Representation Theory</h3>
+
+    <hr>
+
+    <h2>Geometry</h2>
+    <h3>Analytic Geometry</h3>
+    <h3>Differential Geometry</h3>
+    <h3>Algebraic Geometry</h3>
+    <h3>Complex Geometry</h3>
+    <h3>Symplectic Geometry</h3>
+
+    <hr>
+
+    <h2>Number Theory</h2>
+    <h3>Algebraic Number Theory</h3>
+    <h3>Analytic Number Theory</h3>
+    <h3>Arithmetic Geometry</h3>
+    <h3>Modular Forms</h3>
+    <h3>Diophantine Equations</h3>
+
+    <hr>
+
+    <h2>Topology</h2>
+    <h3>General Topology</h3>
+    <h3>Algebraic Topology</h3>
+    <h3>Differential Topology</h3>
+    <h3>Geometric Topology</h3>
+
+    <hr>
+
+    <h2>Differential Equations and Dynamical Systems</h2>
+    <h3>Ordinary Differential Equations</h3>
+    <h3>Partial Differential Equations</h3>
+    <h3>Dynamical Systems</h3>
+    <h3>Ergodic Theory</h3>
+
+    <hr>
+
+    <h2>Probability</h2>
+    <h3>Probability Theory</h3>
+    <h3>Stochastic Processes</h3>
+    <h3>Mathematical Statistics</h3>
+
+    <hr>
+
+    <h2>Computational Mathematics</h2>
+    <h3>Numerical Analysis</h3>
+    <h3>Scientific Computing</h3>
+    <h3>Algorithms and Complexity</h3>
+
+    <hr>
+
+    <h2>Applied Mathematics</h2>
+    <h3>Operations Research</h3>
+    <h3>Game Theory</h3>
+    <h3>Systems and Control Theory</h3>
+    <h3>Mathematical Physics</h3>
+
+    <hr>
+
+    <h2>Combinatorics</h2>
+    <h3>Graph Theory</h3>
+    <h3>Enumerative Combinatorics</h3>
+    <h3>Extremal Combinatorics</h3>
+    <h3>Combinatorial Design Theory</h3>
+
+    <a href="../index.html">Home Page</a> <br>
+    <a href="../MathFields/mathfields.html">Core Subfields of Math</a>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+使用者開啟 HTML
+    ↓
+瀏覽器讀取到 <script src="katex-config.js">
+    ↓
+執行 katex-config.js
+    ↓
+檢查 document.readyState
+    ↓
+    ├─ 如果還在 loading → 等待 DOMContentLoaded 事件
+    └─ 如果已 ready → 立即執行 loadKatex()
+                ↓
+        1. 建立 <link> 載入 CSS
+                ↓
+        2. 建立 <script> 載入 KaTeX 核心
+                ↓
+        (等待核心載入完成)
+                ↓
+        onload 觸發 → 載入 auto-render 擴充
+                ↓
+        (等待 auto-render 載入完成)
+                ↓
+        onload 觸發 → 執行 renderMathInElement()
+                ↓
+        掃描整個 document.body
+                ↓
+        找到 $...$ 或 $$...$$ 等語法
+                ↓
+        轉換成 HTML 數學公式
+                ↓
+        使用者看到漂亮的公式 ✓
